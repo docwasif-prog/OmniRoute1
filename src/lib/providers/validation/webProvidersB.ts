@@ -484,6 +484,27 @@ export async function validateJulesProvider({ apiKey }: { apiKey: string }) {
   }
 }
 
+/** Dr. Wasif Iqbal clinical assistant provider — validate website availability. */
+export async function validateDrWasifProvider({ apiKey }: { apiKey: string }) {
+  try {
+    const response = await validationWrite("https://drwasif.online", {
+      method: "GET",
+    });
+
+    if (response.ok) {
+      return { valid: true, error: null };
+    }
+
+    const errorText = await response.text().catch(() => "");
+    return {
+      valid: false,
+      error: errorText.trim() || `drwasif.online returned status ${response.status}`,
+    };
+  } catch (error: unknown) {
+    return toValidationErrorResult(error);
+  }
+}
+
 /**
  * Devin cloud-agent (Cognition) — GET /v1/sessions with Bearer auth
  * (see docs.devin.ai/api-reference/sessions/list-sessions). Distinct from the

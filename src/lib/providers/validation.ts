@@ -45,6 +45,7 @@ import {
   validateCopilotWebProvider,
   validateT3WebProvider,
   validateJulesProvider,
+  validateDrWasifProvider,
   validateDevinCloudAgentProvider,
   validateInnerAiProvider,
   validateNotionWebProvider,
@@ -173,6 +174,7 @@ export async function validateProviderApiKey({ provider, apiKey, providerSpecifi
     "v0-vercel": ({ apiKey, providerSpecificData }: any) =>
       validateV0VercelProvider({ apiKey, providerSpecificData, isLocal }),
     jules: validateJulesProvider,
+    drwasif: validateDrWasifProvider,
     // "devin" is the Cognition cloud-agent provider (distinct from the "devin-cli"
     // LLM/ACP provider, which is already registered in providerRegistry). Wired here
     // for parity with the "jules" cloud-agent entry above — see #6142.

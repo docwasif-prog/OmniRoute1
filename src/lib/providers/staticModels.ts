@@ -74,6 +74,9 @@ const STATIC_MODEL_PROVIDERS: Record<string, () => Array<{ id: string; name: str
     // so the "Available Models" UI shows something instead of a hard failure (#6142).
     { id: "devin", name: "Devin (Cognition cloud agent)" },
   ],
+  drwasif: () => [
+    { id: "drwasif", name: "Dr. Wasif Iqbal (Pediatric AI Assistant)" },
+  ],
   "amazon-q": () => [
     // Amazon Q Developer shares KiroExecutor + OAuth wiring with kiro but has no
     // discovery config or registry catalog of its own — single non-selectable
