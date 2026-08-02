@@ -70,6 +70,15 @@ const CLOUD_AGENTS = [
     iconBg: "bg-slate-500/10",
     iconColor: "text-slate-600",
   },
+  {
+    id: "drwasif",
+    name: "Dr. Wasif Iqbal",
+    provider: "drwasif.online",
+    descriptionKey: "agentDescriptions.drwasif",
+    icon: "medical_services",
+    iconBg: "bg-sky-500/10",
+    iconColor: "text-sky-600",
+  },
 ];
 
 const STATUS_OPTIONS: { value: TaskStatus | "all"; labelKey: string }[] = [

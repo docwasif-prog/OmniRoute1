@@ -9504,7 +9504,8 @@
       "jules": "Google's autonomous coding agent",
       "devin": "Cognition's AI software engineer",
       "codexCloud": "OpenAI's cloud-based coding agent",
-      "cursorCloud": "Cursor's Background / Cloud Agents (official API key)"
+      "cursorCloud": "Cursor's Background / Cloud Agents (official API key)",
+      "drwasif": "Dr. Wasif Iqbal's Pediatric AI Assistant (drwasif.online)"
     },
     "activityTypes": {
       "plan": "Plan",

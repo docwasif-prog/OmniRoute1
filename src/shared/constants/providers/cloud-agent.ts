@@ -33,4 +33,14 @@ export const CLOUD_AGENT_PROVIDERS = {
     website: "https://openai.com/codex",
     authHint: "OpenAI API key with Codex Cloud task access.",
   },
+  drwasif: {
+    id: "drwasif",
+    alias: "drwasif",
+    name: "Dr. Wasif Iqbal",
+    icon: "medical_services",
+    color: "#0284C7",
+    textIcon: "WI",
+    website: "https://drwasif.online",
+    authHint: "Dr. Wasif Iqbal online clinic AI assistant integration key.",
+  },
 };
